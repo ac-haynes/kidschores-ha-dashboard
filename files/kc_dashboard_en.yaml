@@ -20,15 +20,15 @@ sections:
                 {%- set ns = namespace(Kid_name='',  Kid_name_normalize='', 
                 points=0, points_label='',  points_icon='',  overdue=0, 
                 weekly_completed=0, todays_completed=0,  all_time_completed='', 
-                highest_badge='', highest_badge_icon='', 
+                highest_badge='', highest_badge_icon='',
                 highest_badge_entity='',  highest_badge_multiplier='',
                 highest_badge_display_line='',  achievements=[],  challenges=[],
                 content='',
 
-                  WELCOME='', 
+                  WELCOME='',
                   ACHIEVEMENTS='', CHALLENGES='', NONE='',
-                  WEEKLY_COMPLETED='', TODAYS_COMPLETED=''
-                ) -%}    
+                  WEEKLY_COMPLETED='', TODAYS_COMPLETED='', COMPLETED=''
+                ) -%}
 
                 {#-- ************* Set Translatable Text ************* --#}  
 
@@ -40,9 +40,11 @@ sections:
 
                 {%- set ns.TODAYS_COMPLETED = "Today's Completed" -%}
 
+                {%- set ns.COMPLETED = "Completed" -%}
+
                 {%- set ns.ACHIEVEMENTS = "Achievements" -%}
 
-                {%- set ns.CHALLENGES = "Challenges" -%} 
+                {%- set ns.CHALLENGES = "Challenges" -%}
 
                 {#-- ************* End Translatable Text ************* --#}
 
